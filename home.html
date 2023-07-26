@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dine in.com</title>
+    <link rel="stylesheet" href="css/homestyle.css">
+    <style>
+        body {
+
+            background-color: #21494e96;
+
+        }
+
+        .navbar {
+            background-color: black;
+            border-radius: 30px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar li a {
+            font-size: 23px;
+            padding: 2px 69px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            color: red;
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 17px 84px;
+
+        }
+
+        .navbar input {
+            border: 3px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+
+        /* Services Section */
+        #services {
+            margin: 34px;
+            display: flex;
+        }
+
+        #services .box {
+            border: 2px solid brown;
+            padding: 34px;
+            margin: 2px 10px;
+            border-radius: 28px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+            box-shadow: 2px;
+        }
+
+        #services .box img {
+            height: 160px;
+            margin: auto;
+            display: block;
+        }
+
+        #services .box p {
+            font-family: 'Bree Serif', serif;
+
+        }
+
+        #resturant {
+            margin: 34px;
+            display: inline;
+            width: 200px;
+            align-items: flex-start;
+            text-align: center;
+
+        }
+
+        #resturant .box {
+            border: 2px solid #251111;
+            padding: 43px;
+            margin: 0px 433px;
+            border-radius: 28px;
+            background: #f2f2f2;
+            margin-bottom: 28px;
+            box-shadow: 2px solid transparent;
+        }
+
+        #resturant .box img {
+            height: 260px;
+            margin: auto;
+            display: block;
+            align-items: left;
+        }
+
+        .btn {
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border: 4px solid #75704c;
+            background-color: #514431;
+            border-radius: 24px;
+            margin: 8px 57px;
+            padding: 10px 20px;
+            font-family: 'Agdasima', sans-serif;
+            text-decoration: none;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(71, 72, 70);
+        }
+
+        .btn1 {
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border: 1px solid #a0944b;
+            background-color: #4b8b0a;
+            border-radius: 50px;
+            margin: -29px 33px;
+            padding: 11px 20px;
+            font-family: 'Agdasima', sans-serif;
+            text-decoration: none;
+
+        }
+
+        .btn1:hover {
+            background-color: rgb(158, 126, 84);
+        }
+
+        #contact {
+            position: relative;
+        }
+
+        #contact::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+            background: url(image/contact.jpg) no-repeat center center/cover;
+
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+        }
+
+        #contact-box form {
+            width: 40%;
+        }
+
+        #contact-box label {
+            font-size: 1.3rem;
+            font-family: 'Bree Serif', serif;
+
+        }
+
+
+        footer {
+            background: black;
+            color: white;
+            padding: 9px 20px;
+        }
+        #book{
+            text-decoration: none;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search here">
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+    <section id="services-container">
+        <h1 class="h-primary center">Our Collections</h1>
+        <div id="services">
+            <div class="box">
+                <img src="image/cafe.jpg" alt="">
+                <h2 class="h-secondary center">Great cafe</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam,
+                    recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
+                </p>
+                <button class="btn">view more</button>
+            </div>
+            <div class="box">
+                <img src="image/luxury.jpg" alt="">
+                <h2 class="h-secondary center">Luxury Dinning</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab
+                    dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+
+                </p>
+                <button class="btn">view more</button>
+            </div>
+            <div class="box">
+                <img src="image/must_visit.jpeg"">
+                <h2 class=" h-secondary center">Must Visit places</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam
+                    minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
+                    .</p>
+                <button class="btn">View more</button>
+            </div>
+        </div>
+    </section>
+    <section id="resturant">
+        <h1 class="h-primary center">Resturants for you</h1>
+        <div id="resturant">
+            <div class="box">
+                <img src="image/1.jpg" alt="">
+                <h1 class="h-secondary center">Patwari resturant</h1>
+                <p>
+                <address>Lorem ipsum dolor sit amet.</address>.</p>
+                <p>2Km away</p>
+                <button class="btn1"><a href="view.html">View Detaials</a> </button>
+                <button class="btn1"><a href="book.html">Book now</a></button>
+            </div>
+            <div class="box">
+                <img src="image/2.jpg" alt="">
+                <h1 class="h-secondary center">Sahi grand </h1>
+                <p>
+                <Address>Lorem ipsum dolor sit.</Address>.</p>
+                <p>3km away</p>
+                
+                <button class="btn1" id="Book"><a href="view.html">View Details</a> </button>
+                
+                
+                <button class="btn1"><a href="book.html">Book now</a></button>
+            </div>
+            <div class="box">
+                <img src="image/3.jpeg">
+
+                <h1 class="h-secondary center">Moti Mahal</h1>
+                <p>
+                <Address>Lorem ipsum dolor sit amet.</Address>
+                </p>
+                <p>3.5Km away</p>
+                <button class="btn1"><a href="view.html">View Detaials</a> </button>
+                <button class="btn1"><a href="book.html">Book now</a></button>
+            </div>
+            <div class="box">
+                <img src="image/5.jpg">
+
+                <h1 class="h-secondary center">New Taj family resturant</h1>
+                <p>
+                <Address>Lorem ipsum dolor sit amet.</Address>
+                </p>
+                <p>4Km away</p>
+                <button class="btn1"><a href="view.html">View Detaials</a> </button>
+                <button class="btn1"><a href="book.html">Book now</a></button>
+            </div>
+            <div class="box">
+                <img src="image/6.webp">
+
+                <h1 class="h-secondary center">Dosa Delight</h1>
+                <p>
+                <Address>Lorem ipsum dolor sit amet.</Address>
+                </p>
+                <p>4.5Km away</p>
+                <button class="btn1"><a href="view.html">View Detaials</a> </button>
+                <button class="btn1"><a href="book.html">Book now</a></button>
+            </div>
+            <div class="box">
+                <img src="image/7.jpg">
+
+                <h1 class="h-secondary center">Biryani King</h1>
+                <p>
+                <Address>Lorem ipsum dolor sit amet.</Address>
+                </p>
+                <p>1Km away</p>
+                <button class="btn1"><a href="view.html">View Detaials</a> </button>
+                <button class="btn1"><a href="book.html">Book now</a></button>
+            </div>
+
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+            </form>
+            <button>Send</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.Dinein.com. All rights reserved!
+        </div>
+    </footer>
+
+
+    </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiggy Order Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #444121;
+  color: white;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.2s ease-in-out;
+}
+
+nav li a:hover {
+  color: #ffd700;
+}
+
+main {
+  padding: 20px;
+}
+
+.restaurant-info h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.restaurant-info h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #ff2e63;
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-items li {
+  margin-bottom: 20px;
+}
+
+.add-to-cart-btn {
+  background-color: #e37d2f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e2cd54;
+}
+
+.shopping-cart {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-items li {
+  margin-bottom: 10px;
+}
+
+.checkout-btn {
+  background-color: #a6a94cec;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.checkout-btn:hover {
+  background-color: #5c5321;
+}
+
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="image/menu.jpg">Menu</a></li>
+        <li><a href="#">Deals</a></li>
+        <!-- Add more navigation items as needed -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="restaurant-info">
+      <h1>Restaurant Name</h1>
+      <p>Address: 123 Main Street, City</p>
+      <p>Phone: (123) 456-7890</p>
+      <!-- Add more restaurant details as needed -->
+
+      <h2>Menu</h2>
+      <ul class="menu-items">
+        <li>
+          <h3>Item 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis?</p>
+          <p>Price: $10.99</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </li>
+        <li>
+          <h3>Item 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat.</p>
+          <p>Price: $8.99</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </li>
+        <li>
+            <h3>Item 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat.</p>
+            <p>Price: $8.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </li>
+          <li>
+            <h3>Item 4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat.</p>
+            <p>Price: $8.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </li>
+          <li>
+            <h3>Item 5</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat.</p>
+            <p>Price: $8.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </li>
+        <!-- Add more menu items as needed -->
+      </ul>
+    </section>
+
+    <section class="shopping-cart">
+      <h2>Order cart</h2>
+      <ul class="cart-items">
+        <!-- Cart items will be dynamically added here when the user clicks "Add to Cart" -->
+      </ul>
+      <p>Total: $0.00</p>
+      <button class="checkout-btn">Your orders</button>
+      <button class="checkout-btn">Book your table now </button>
+    </section>
+  </main>
+
+ 
+</body>
+
+</html>
